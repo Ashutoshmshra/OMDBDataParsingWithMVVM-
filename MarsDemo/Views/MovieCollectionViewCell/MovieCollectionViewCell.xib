@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="MarsDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYS-nk-DGG">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="2rJ-Th-AXb" customClass="ImageLoader" customModule="MarsDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ9-aL-KdI">
+                                <rect key="frame" x="5" y="155" width="140" height="17.5"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-lt-3gb">
+                                <rect key="frame" x="5" y="177.5" width="140" height="16.5"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Year ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTg-tx-3rK">
+                                <rect key="frame" x="5" y="199" width="140" height="16.5"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jZ9-aL-KdI" secondAttribute="trailing" constant="5" id="9YW-c7-FCh"/>
+                            <constraint firstItem="WTg-tx-3rK" firstAttribute="leading" secondItem="bYS-nk-DGG" secondAttribute="leading" constant="5" id="HFB-5c-WtP"/>
+                            <constraint firstItem="WTg-tx-3rK" firstAttribute="top" secondItem="Qfe-lt-3gb" secondAttribute="bottom" constant="5" id="IsW-xB-tbi"/>
+                            <constraint firstAttribute="bottom" secondItem="2rJ-Th-AXb" secondAttribute="bottom" constant="75" id="KxC-UF-QyZ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="Qfe-lt-3gb" secondAttribute="trailing" constant="5" id="MvS-Nw-VUq"/>
+                            <constraint firstAttribute="trailing" secondItem="WTg-tx-3rK" secondAttribute="trailing" constant="5" id="O5M-es-Uj1"/>
+                            <constraint firstItem="2rJ-Th-AXb" firstAttribute="leading" secondItem="bYS-nk-DGG" secondAttribute="leading" id="Qyu-Or-kum"/>
+                            <constraint firstItem="Qfe-lt-3gb" firstAttribute="top" secondItem="jZ9-aL-KdI" secondAttribute="bottom" constant="5" id="ap1-Gr-BkA"/>
+                            <constraint firstItem="jZ9-aL-KdI" firstAttribute="top" secondItem="2rJ-Th-AXb" secondAttribute="bottom" constant="5" id="hc8-eT-EUe"/>
+                            <constraint firstItem="Qfe-lt-3gb" firstAttribute="leading" secondItem="bYS-nk-DGG" secondAttribute="leading" constant="5" id="mWm-38-gwF"/>
+                            <constraint firstAttribute="trailing" secondItem="2rJ-Th-AXb" secondAttribute="trailing" id="sPz-FS-bAr"/>
+                            <constraint firstItem="jZ9-aL-KdI" firstAttribute="leading" secondItem="bYS-nk-DGG" secondAttribute="leading" constant="5" id="smN-IN-evA"/>
+                            <constraint firstItem="2rJ-Th-AXb" firstAttribute="top" secondItem="bYS-nk-DGG" secondAttribute="top" id="sue-Ol-qs0"/>
+                            <constraint firstAttribute="bottom" secondItem="WTg-tx-3rK" secondAttribute="bottom" constant="9.5" id="tWn-Fi-w5f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bYS-nk-DGG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MPt-cH-4nz"/>
+                <constraint firstAttribute="bottom" secondItem="bYS-nk-DGG" secondAttribute="bottom" id="PwY-cQ-joB"/>
+                <constraint firstAttribute="trailing" secondItem="bYS-nk-DGG" secondAttribute="trailing" id="asr-9f-7p2"/>
+                <constraint firstItem="bYS-nk-DGG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ocs-IF-K3k"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="150" height="277"/>
+            <connections>
+                <outlet property="imagePoster" destination="2rJ-Th-AXb" id="cE7-iF-eym"/>
+                <outlet property="lblName" destination="jZ9-aL-KdI" id="acS-3n-3IP"/>
+                <outlet property="lblTime" destination="WTg-tx-3rK" id="lev-DH-gu3"/>
+                <outlet property="lblType" destination="Qfe-lt-3gb" id="82x-3W-EPY"/>
+                <outlet property="viewContainer" destination="bYS-nk-DGG" id="GSU-H8-Oeh"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="97.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholderImage" width="309" height="309"/>
+    </resources>
+</document>
