@@ -54,7 +54,6 @@ class  MoviesListViewModel {
     public func pageData(){
         totalData = Int(self.repos?.totalResults ?? "1") ?? 1
         totalPage = totalData/(self.repos?.search?.count ?? totalData)
-        print("Total page is \(totalPage)")
     }
     //MARK:- Data for views
     public func dataAtIndexPath(_ indexPath:IndexPath) -> Search{
